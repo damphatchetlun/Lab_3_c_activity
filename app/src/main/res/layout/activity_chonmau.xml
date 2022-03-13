@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewAnh"
+        android:layout_width="119dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vs_green" />
+
+    <TextView
+        android:id="@+id/textViewMau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Điện Thoại Vsmart Joy 3 \nHàng chính hãng"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAnh"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:layout_marginTop="16dp"
+        android:background="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAnh">
+
+        <ImageView
+            android:id="@+id/imageViewXanh"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDo"
+            app:srcCompat="@drawable/xanh" />
+
+        <ImageView
+            android:id="@+id/imageViewDo"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDen"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/imageViewDen"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBac"
+            app:srcCompat="@drawable/den" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:text="Chọn một màu bên dưới:"
+            android:textColor="#020202"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewBac"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:srcCompat="@drawable/bac" />
+
+        <Button
+            android:id="@+id/buttonXong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="17dp"
+            android:backgroundTint="#1952E2"
+            android:text="XONG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewXanh" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

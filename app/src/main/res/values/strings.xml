@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab_3_c_activity</string>
+    <string name="tien">
+        <strike>
+            1.790.000 đ
+        </strike>
+    </string>
+</resources>
